@@ -1,12 +1,14 @@
-import React from 'react'
+import Home from 'pages/Home';
+import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
-const App = () => {
+const App: React.FC = () => {
+  const client = new QueryClient();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Weather App - Code challenge</h2>
-      </header>
-    </div>
+    <QueryClientProvider client={client}>
+      <Home />
+    </QueryClientProvider>
   );
 };
 
