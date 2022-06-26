@@ -22,12 +22,42 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   img {
     display: block;
     height: auto;
-    max-height: 100%;
+    max-height: 150px;
     width: auto;
-    max-width: 100%;
+    max-width: 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .app-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 2rem 1rem;
+    }
   }
 `;
 
