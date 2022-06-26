@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-
 const GlobalStyle = createGlobalStyle`
   *,
   *::before,
@@ -16,10 +15,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    min-height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #56CCF2;
+    background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);
+    background: linear-gradient(to top, #2F80ED, #56CCF2);
   }
 
   ::-webkit-scrollbar {
@@ -39,12 +42,13 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     padding: 1rem;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1080px;
     margin: auto;
   }
 
   .app-title {
     margin-bottom: 1.5rem;
+    color: #fff;
     text-align: center;
   }
 

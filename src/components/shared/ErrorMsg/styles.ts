@@ -4,8 +4,10 @@ import styled from 'styled-components';
 export const ErrorIcon = styled(FontAwesomeIcon)`
   height: 3.5rem;
   margin: 0.5rem auto;
-  color: #9e9e9e;
+  color: #fff;
 `;
 export const ErrorText = styled.p`
-  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
 `;
