@@ -30,23 +30,19 @@ export type WeatherResponse = {
   };
   dt: number;
   sys: {
-    type: number;
-    id: number;
     country: string;
     sunrise: number;
     sunset: number;
+    timezone: number;
   };
-  timezone: number;
   id: number;
   name: string;
-  cod: number;
 };
-
 
 export type WeatherGroupResponse = {
   cnt: number;
   list: WeatherResponse[];
-}
+};
 
 export type MappedWeatherResponse = {
   iconId: number;

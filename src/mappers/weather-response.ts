@@ -20,7 +20,7 @@ export const weatherResponseMapped = (
     country: source.sys.country,
     sunrise: source.sys.sunrise,
     sunset: source.sys.sunset,
-    timezone: source.timezone,
+    timezone: source.sys.timezone,
     id: source.id,
     name: source.name,
   };
