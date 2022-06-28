@@ -1,11 +1,5 @@
 <h1 align="center">Weather App</h1>
 
-<!-- <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/fab-rvn/weather-app?color=56BEB8">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/fab-rvn/weather-app?color=56BEB8">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/fab-rvn/weather-app?color=56BEB8">
-</p> -->
-
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0;
   <a href="#built-with">Built with</a> &#xa0; | &#xa0;
@@ -17,30 +11,34 @@
 
 ## About
 
-In this project I have to develop an UI that shows the weather of different cities and
-allows filter/edit and save some information.
-The solution must be developed using the frontend framework you want (Vue.js, React, Angular...etc) and any other library that the candidate considers useful.
+In this project I have to develop an UI that shows the weather of different
+cities and allows filter/edit and save some information. The solution must be
+developed using the frontend framework you want (Vue.js, React, Angular...etc)
+and any other library that the candidate considers useful.
 
-*Functional requirements:*
+_Functional requirements:_
+
 1. Use OpenWeatherMap API to obtain weather information
 2. Show a list of at least ten cities' weathers in the main app page
 3. Search input with autocomplete cities to filter the previous list
 
-*Evaluation points:*
+_Evaluation points:_
+
 1. Clean code
 2. Easy to use
-2. UI/Layout design
-3. Tests
-4. Components design
+3. UI/Layout design
+4. Tests
+5. Components design
 
 <br>
 
 ## Built with
 
 - React with Typescript
+- React Query for data fetching
 - Styled components for styling
 - Eslint & Prettier for linting
-- Jest for testing
+- Jest, React Testing Library and Cypress for testing
 
 ## Getting Started
 
@@ -65,6 +63,14 @@ how to deploy the project on a live system.
 4. Start the project in your localhost
    ```sh
    npm run start
+   ```
+5. test
+   ```sh
+    npm run test
+   ```
+6. e2e
+   ```sh
+    npm run cy:open
    ```
 
 <br>
